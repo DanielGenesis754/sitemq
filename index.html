@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Meu site</h1>
-        <menu>
+        <i class="material-icons" id="burger" onclick="clickMenu()">menu</i>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -25,7 +27,7 @@
             <p>Em grande parte, este livro trata de hobbits, e através de suas páginas
                 o leitor pode descobrir muito da personalidade deles e um pouco de sua
                 história. I nformações adicionais podem ser obtidas na seleção feita a partir
-                do Livro Vermelho do Marco Ocidental, já publicada sob o título deO
+                do Livro Vermelho do Marco Ocidental, já publicada sob o título de O
                 Hobbit. Essa história originou-se dos primeiros capítulos do Livro Vermelho,
                 escritos pelo próprio Bilbo, o primeiro hobbit a se tornar famoso no mundo
                 todo, e chamados por ele de Lá e de Volta Outra Vez, porque relatavam a sua
@@ -60,5 +62,14 @@
             </p>
         </article>
     </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>

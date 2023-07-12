@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: #f8f7cc;
+    background-color: #eeda279a;
 }
 
 header{
@@ -19,8 +19,21 @@ h1{
     text-align: center;
 }
 
-menu{
+#burger{
+    background-color: rgb(82, 82, 82);
+    text-align: center;
     display: block;
+    padding: 10px;
+}
+
+#burger:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+menu{
+    display: none;
 }
 
 ul{
@@ -47,7 +60,8 @@ main {
     margin: auto;
     margin-top: 10px;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.068);
 }
 
 h2 {
